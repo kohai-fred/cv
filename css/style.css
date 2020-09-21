@@ -27,6 +27,16 @@ a {
 img {
   max-width: 100%; }
 
+.mb-5 {
+  margin-bottom: 5rem !important; }
+
+.mb-2 {
+  margin-bottom: 2rem !important; }
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 5rem; }
+
 .title-small {
   letter-spacing: 0.5rem;
   font-size: 1.7rem; }
@@ -40,7 +50,7 @@ img {
 .grid-container {
   display: grid;
   min-height: 100vh;
-  grid: "picture header" auto "aside main" 1fr / 350px auto; }
+  grid: "picture header" auto "aside main" 1fr / 350px auto; }
 
 header {
   grid-area: header;
@@ -108,6 +118,41 @@ aside {
       aside .block .stars-container i {
         font-size: 2rem;
         margin: 0 1rem; }
+    aside .block .social-container {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin: 2rem 0; }
+      aside .block .social-container i {
+        font-size: 2rem;
+        flex: 0 0 50px;
+        margin-right: 1rem; }
+      aside .block .social-container p {
+        flex: auto;
+        margin: 0; }
 
 main {
-  grid-area: main; }
+  grid-area: main;
+  padding: 5rem; }
+  main h2 {
+    margin-bottom: 4rem; }
+  main p {
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    margin-bottom: 5rem; }
+  main .experience {
+    display: flex;
+    margin: 6rem 0; }
+    main .experience .timeline {
+      text-align: center;
+      color: var(--hint);
+      padding-right: 2rem;
+      border-right: 1px solid var(--border); }
+    main .experience .content {
+      padding: 0 1rem; }
+      main .experience .content h3 {
+        margin: 0; }
+      main .experience .content ul {
+        margin: 2rem 0;
+        list-style: circle;
+        padding-left: 4rem; }
