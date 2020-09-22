@@ -9,6 +9,7 @@
   grid:
     "picture header" auto
     "aside main" 1fr
+    "footer footer" auto
     / 350px auto;
 }
 
@@ -141,5 +142,61 @@ main {
         padding-left: 4rem;
       } 
     } 
+  }
+}
+
+footer{
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5rem;
+  background: var(--text);
+
+  h2{
+    margin-bottom: 3rem;
+  }
+  form{
+    display: flex;
+    align-items: center;
+
+  }
+  .prefix{
+    background: linear-gradient(to right, var(--dark), var(--light));
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 2rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  button{
+    background: var(--text);
+    border: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+      opacity: 0.8;
+    }
+    .postfix{
+      background: linear-gradient(to right, var(--dark), var(--light));
+      padding: 1rem 2rem;
+      color: white;
+      font-size: 2rem;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+    }
+  }
+  input{
+    outline: 0;
+    border: 0;
+    min-width: 400px;
+    padding: 1rem 2rem;
+    line-height: 2rem;
+    &::placeholder{
+      color: var(--text);
+    }
   }
 }
